@@ -6,25 +6,40 @@ Copyright (c) 2017 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
 
+Mask R-CNN
+配置和数据加载代码的Ms Coco版权所有(c)
+
+ 2017马特波特公司根据MIT许可(详见许可)
+ 瓦利德·阿卜杜勒报道
+
 ------------------------------------------------------------
 
 Usage: import the module (see Jupyter notebooks for examples), or run from
        the command line as such:
+       导入模块(参见木星笔记本的例子)，或者运行
 
     # Train a new model starting from pre-trained COCO weights
+    导入模块(参见木星笔记本的例子)，或者运行
     python3 coco.py train --dataset=/path/to/coco/ --model=coco
 
     # Train a new model starting from ImageNet weights. Also auto download COCO dataset
+    从ImageNet权值开始训练新模型。还可以自动下载coco数据集
     python3 coco.py train --dataset=/path/to/coco/ --model=imagenet --download=True
 
     # Continue training a model that you had trained earlier
+    继续训练你之前训练过的模型
     python3 coco.py train --dataset=/path/to/coco/ --model=/path/to/weights.h5
 
     # Continue training the last model you trained
+    继续训练你之前训练过的模型
     python3 coco.py train --dataset=/path/to/coco/ --model=last
 
     # Run COCO evaluatoin on the last model you trained
-    python3 coco.py evaluate --dataset=/path/to/coco/ --model=last
+    在你训练的最后一个模型上运行coco评估
+    python3 coco.py evaluate --dataset=/path/to/coco/ --model=lastFF
+
+
+
 """
 
 import os
